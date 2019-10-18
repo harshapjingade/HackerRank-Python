@@ -1,1 +1,1 @@
-Solved Hacker Rank Python Programs
+Solved Hacker Rank Python Problems

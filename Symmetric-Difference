@@ -1,0 +1,5 @@
+M = int(input())
+m = set(input().split())
+N = int(input())
+n = set(input().split())
+print('\n'.join(sorted(m.difference(n).union(n.difference(m)), key=int)))

@@ -1,0 +1,6 @@
+n = int(input())
+coun = set()
+for i in range(n):
+    coun.add(input())
+
+print(len(coun))

@@ -5,3 +5,4 @@ B = set(map(int, input().split()))
 print(len(N|B)) // Union
 print(len(N&B)) // intersection
 print(len(N-B)) // Difference
+print(len(N^B)) // Symmetric Difference

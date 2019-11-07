@@ -1,0 +1,15 @@
+A = int(input())
+N = set(map(int,input().split()))
+for i in range(int(input())):
+    value = input().split()
+    M = set(map(int, input().split()))
+    if value[0] == "intersection_update":
+        N.intersection_update(M)
+    elif  value[0] == "symmetric_difference_update":
+        N.symmetric_difference_update(M)
+    elif value[0] == "difference_update":
+        N.difference_update(M)
+    elif value[0] == 'update':
+        N.update(M)
+    
+print(sum(N))

@@ -1,0 +1,6 @@
+s, sub = map(int,input().split())
+row=[]
+for i in range(sub):
+    row.append(map(float,input().split()))
+for i in zip(*row):
+    print(sum(i)/sub)

@@ -1,0 +1,11 @@
+import numpy
+n = int(input())
+als,bls=[],[]
+for i in range(n):
+    als.append(input().split())
+for j in range(n):
+    bls.append(input().split())
+A = numpy.array(als,int)
+B = numpy.array(bls,int)
+
+print(numpy.dot(A,B))

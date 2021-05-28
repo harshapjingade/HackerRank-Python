@@ -1,0 +1,8 @@
+import numpy
+lst=[]
+n, m = input().split()
+for i in range(int(n)):
+    lst.append(input().split())
+array = numpy.array(lst,int)
+row_val = numpy.sum(array, axis = 0)
+print(numpy.prod(row_val))

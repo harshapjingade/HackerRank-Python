@@ -1,0 +1,11 @@
+from collections import Counter
+total=0
+n = int(input())
+shoesize = Counter(map(int,input().split()))
+#print(shoesize)
+for i in range(int(input())):
+    size, price = map(int,input().split())
+    if shoesize[size]:
+        total+=price
+        shoesize[size]-=1
+print(total)

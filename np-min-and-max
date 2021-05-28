@@ -1,0 +1,9 @@
+import numpy
+lst=[]
+n, m = input().split()
+for i in range(int(n)):
+    lst.append(input().split())
+array = numpy.array(lst,int)
+
+num_min=numpy.min(array, axis = 1)
+print(numpy.max(num_min))

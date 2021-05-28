@@ -1,0 +1,9 @@
+for i in range(int(input())):
+    n = int(input())
+    nval = set(map(int,input().split()))
+    m = int(input())
+    mval = set(map(int,input().split()))
+    if nval.issubset(mval):
+        print(True)
+    else:
+        print(False)

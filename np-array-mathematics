@@ -1,0 +1,15 @@
+import numpy
+n, m = map(int,input().split())
+a,b=[],[]
+for i in range(n):
+    a.append(numpy.array(input().split(), int))
+for j in range(n):
+    b.append(numpy.array(input().split(), int))
+    
+print(numpy.add(a,b))
+print(numpy.subtract(a,b))
+print(numpy.multiply(a,b))
+print(numpy.floor_divide(a,b))
+print(numpy.mod(a,b))
+print(numpy.power(a,b))
+
